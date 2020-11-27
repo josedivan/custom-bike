@@ -165,3 +165,19 @@ p {
   margin-bottom: 20px;
 }
 /*Portifólio*/
+.portifolio {
+  width: 100%;
+  background: #000;
+  padding: 40px 0;
+}
+.portifolio .subitulo {
+  color: #fec63e;
+}
+
+.portifolio .subitulo::after {
+  background: #fec63e;
+}
+
+.portifolio_lista li:last-child {
+  margin-top: 20px;
+}
