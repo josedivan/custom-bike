@@ -21,6 +21,11 @@ p {
   color: #fff;
   border-color: #fff;
 }
+.btn.btn-preto:hover {
+  color: #000;
+  border-color: #000;
+}
+
 .subitulo {
   font-size: 24px;
   line-height: 30px;
@@ -29,6 +34,7 @@ p {
   color: #000;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 40px;
 }
 .subitulo:after {
   content: "";
@@ -45,6 +51,7 @@ p {
   top: 0;
   background: #fec63e;
   padding: 15px 0;
+  z-index: 10;
 }
 .header_menu {
   text-align: right;
@@ -119,10 +126,42 @@ p {
 .produtos {
   padding: 60px 0;
 }
-.produto-lista li {
+.produtos_lista li {
   background: #fec63e;
+  text-align: center;
 }
-.produto-lista-icone {
+.produtos_lista li h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+}
+
+.produtos_lista li h3:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #000;
+  margin: 2px auto;
+}
+.produtos_lista li p {
+  padding: 10px 20px 20px 20px;
+}
+
+.produto_icone {
   background: #000;
   padding: 20px;
 }
+.call {
+  padding-top: 40px;
+  text-align: center;
+  clear: both;
+}
+
+.call p {
+  margin-bottom: 20px;
+}
+/*Portifólio*/
