@@ -7,6 +7,9 @@ p {
   font-size: 14px;
   line-height: 20px;
 }
+img {
+  display: block;
+}
 .btn {
   border: 3px solid#fec63e;
   padding: 10px 30px;
@@ -180,4 +183,13 @@ p {
 
 .portifolio_lista li:last-child {
   margin-top: 20px;
+}
+
+.portifolio .call p {
+  color: #fff;
+}
+/*Qualidade*/
+
+.qualidade {
+  padding: 60px 0;
 }
