@@ -8,8 +8,14 @@
   font-size: 18px;
   line-height: 25px;
   margin-bottom: 0.1em;
+  padding-right: 00px;
+}
+.missao_sobre ul li {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .foto-equipe {
-  padding-top: 40px;
+  padding-top: 20px;
 }
