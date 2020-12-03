@@ -97,6 +97,9 @@ img {
 .header_menu ul li a:hover {
   color: #fff;
 }
+.header_menu ul li a.menu_ativo {
+  color: #fff;
+}
 
 .intruducao {
   width: 100%;
@@ -252,7 +255,7 @@ img {
 
 .qualidade_lista {
   padding-top: 20px;
-  overflow: auto;
+  overflow: auto; /* clear fix*/
 }
 
 .qualidade_lista li {
