@@ -9,6 +9,7 @@ p {
 }
 img {
   display: block;
+  max-width: 100%;
 }
 .btn {
   border: 3px solid#fec63e;
@@ -71,7 +72,7 @@ img {
   position: fixed;
   top: 0;
   background: #fec63e;
-  padding: 15px 0;
+  padding: 15px;
   z-index: 10;
 }
 .header_menu {
@@ -177,6 +178,11 @@ img {
   background: #fec63e;
   text-align: center;
 }
+
+.produtos_lista li img {
+  margin: 0 auto;
+}
+
 .produtos_lista li h3 {
   font-weight: bold;
   font-size: 18px;
