@@ -19,3 +19,13 @@
 .foto-equipe {
   padding-top: 20px;
 }
+/*sobre*/
+.missao_sobre p {
+  font-size: 14px;
+  line-height: 20px;
+  padding-right: 0px;
+}
+.missao_sobre ul li {
+  font-size: 14px;
+  line-height: 25px;
+}
