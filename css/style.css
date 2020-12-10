@@ -389,12 +389,15 @@ img {
 }
 
 .js [data-anime] {
-  opacity: 1;
-  transform: translate3d(120px, -120px.0);
-}
-.js.anime {
   opacity: 0;
-  transform: none;
+}
+
+.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+
+.js .anime {
+  opacity: 1;
   transform: none;
   transition: opacity 800ms, transform 800ms;
 }
