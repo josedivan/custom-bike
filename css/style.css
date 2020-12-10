@@ -349,3 +349,52 @@ img {
   background: #fec63e;
   padding: 20px;
 }
+/*javascript*/
+.js [data-slide] {
+  position: relative;
+}
+.js [data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+/* Slide Portifólio*/
+
+.js [data-slide-nav] {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+.js [data-slide-nav] > button {
+  display: inline-block;
+  width: 12px;
+  margin: 4px;
+  height: 12px;
+  border: none;
+  padding: 0px;
+  border-radius: 6px;
+  background: #1d1d1d;
+  text-indent: -100px;
+  overflow: hidden;
+}
+.js [data-slide-nav] > button.active {
+  background: #fec454;
+}
+
+.js [data-anime] {
+  opacity: 1;
+  transform: translate3d(120px, -120px.0);
+}
+.js.anime {
+  opacity: 0;
+  transform: none;
+  transform: none;
+  transition: opacity 800ms, transform 800ms;
+}
