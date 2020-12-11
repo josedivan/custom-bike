@@ -91,32 +91,40 @@
   <section class="orcamento">
     <div class="container">
       <h2 class="subitulo">Orçamento<h2>
-          <form id="form_orcamento" class=" form grid-8">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome">
-            <label for="nome">E-mail</label>
-            <input type="text" id="E-mail">
-            <label for="nome">Telefone</label>
-            <input type="text" id="telefone">
+          <form id="form_orcamento" class=" form grid-8 formphp">
 
-            <label for="espec">Especificações</label>
-            <textarea id="aspec"></textarea>
-            <button type="submit" class="btn">Enviar</button>
-          </form>
-          <div class="orcamento_dados grid-8">
-            <h3>Dados</h3>
-            <span>+55 21 93223-3232</span>
-            <span>Orcamento@bikcraft.com</span>
-            <h3>MONTE A SUA BIKCRAFT</h3>
-            <p>Escolha as especificações:</p>
-            <ul>
-              <li>-Cores</li>
-              <li>-Estilo</li>
-              <li>-Medidas</li>
-              <li>-Acessórios</li>
-              <li>-Acessórios</li>
-            </ul>
-          </div>
+            <form id="form_orcamento" method="POST" action="/enviar.php" class=" contato_form grid-8 formphp">
+              <label for="nome">Nome</label>
+              <input type="nome" id="nome" name="nome" required>
+              <label for="nome">E-mail</label>
+              <input type="email" id="email" name="email" required>
+              <label for="nome">Telefone</label>
+              <input type="email" id="telefone" name="telefone" required>
+
+              <label class="nao-aparece">Se você não é robô, deixe em branco.</label>
+              <input type="text" class="nao-aparece" name="leaveblank">
+              <label class="nao-aparece">Se você não é robô, não mude este campo.</label>
+              <input type="text" class="nao-aparece" name="dontchange" value="http://">
+              <input type="text" id="telefone" name="telefone">
+
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" required></textarea>
+              <button id="enviar" name="enviar" type="submit" class="btn">Enviar</button>
+            </form>
+            <div class="orcamento_dados grid-8">
+              <h3>Dados</h3>
+              <span>+55 21 93223-3232</span>
+              <span>Orcamento@bikcraft.com</span>
+              <h3>MONTE A SUA BIKCRAFT</h3>
+              <p>Escolha as especificações:</p>
+              <ul>
+                <li>-Cores</li>
+                <li>-Estilo</li>
+                <li>-Medidas</li>
+                <li>-Acessórios</li>
+                <li>-Acessórios</li>
+              </ul>
+            </div>
 
           </form>
 
@@ -164,8 +172,10 @@
     </div>
 
   </footer>
+
   <script src="/js/simple-anime.js"></script>
-  <script src="/js/script.js"></script>
+  <script src="/js/simple-form.js"></script>
+  <script src=" /js/script.js"></script>
 
 </body>
 
